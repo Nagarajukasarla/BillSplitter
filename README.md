@@ -1,50 +1,96 @@
-# Welcome to your Expo app 👋
+# Bill Splitter App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A modern, user-friendly mobile application built with React Native and Expo that helps users split bills and expenses among friends and groups.
 
-## Get started
+![Bill Splitter App](screenshots.png) <!-- Replace with actual screenshot paths -->
 
-1. Install dependencies
+## Features
 
-   ```bash
-   npm install
-   ```
+- Three splitting methods: Equal, Exact, and Percentage splits
+- Real-time calculations and validation
+- Intuitive user interface
+- Cross-platform support (iOS & Android)
+- Type-safe navigation with Expo Router
+- Local state management with React Context
 
-2. Start the app
+## Requirements
 
-   ```bash
-    npx expo start
-   ```
+### Development Environment
 
-In the output, you'll find options to open the app in a
+- Node.js (v18 or higher)
+- npm (v9 or higher) or Yarn
+- Expo CLI (`npm install -g expo-cli`)
+- Git
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+### For iOS Development (Mac only)
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+- macOS Monterey or later
+- Xcode 14+
+- CocoaPods (`sudo gem install cocoapods`)
 
-## Get a fresh project
+### For Android Development
 
-When you're ready, run:
+- Android Studio
+- Android SDK (API Level 33+)
+- Android Virtual Device or physical device
+
+## Installation
+
+1. **Clone the Repository**
 
 ```bash
-npm run reset-project
+git clone https://github.com/nagarajukasarla/bill-splitter.git
+cd bill-splitter
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+2. **Install Dependencies**
 
-## Learn more
+```bash
+npm install
+or
+yarn install
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+# Running the App
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+```bash
+npm start
+# or
+yarn start
+```
 
-## Join the community
+## Physical Device
 
-Join our community of developers creating universal apps.
+- Install Expo Go app
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+- Scan QR code from terminal
+
+- Interact with live reload
+
+## Usage Guide
+
+Splitting Options
+
+    Equal Split
+
+      Enter total amount
+
+      Specify number of people
+
+      Automatic equal division
+
+    Exact Split
+
+        Add participants
+
+        Input specific amounts
+
+        Real-time total validation
+
+    Percentage Split
+
+        Allocate percentages
+
+        Auto-calculate shares
+
+        Total percentage validation
